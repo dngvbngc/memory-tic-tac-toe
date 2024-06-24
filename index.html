@@ -10,6 +10,10 @@
 
   <body>
     <div id="main">
+      <button id="hidegridbtn" style="display: ''">HIDE GRID</button>
+      <button id="showgridbtn" style="display: none">SHOW GRID</button>
+      <button id="resetbtn" onclick="reset()">RESET</button>
+      <br /><br />
       <h1>MEMORY TIC TAC TOE</h1>
       <p id="ins">First player select any cell to start.</p>
       <br /><br />
@@ -88,17 +92,15 @@
         <form id="grid-form">
           <input id="row-index" type="number" placeholder="Row" required />
           <input id="col-index" type="number" placeholder="Col" required />
-          <p>Top left cell is at row 1, column 1.</p>
-          <br /><br /><br />
+          <p><small>Top left cell: (1, 1).</small></p>
+          <br />
           <button type="submit">SELECT CELL</button>
         </form>
       </div>
       <br /><br /><br />
-
-      <button id="resetbtn" onclick="reset()">RESET</button>
-      <button id="hidegridbtn" style="display: ''">HIDE GRID</button>
-      <button id="showgridbtn" style="display: none">SHOW GRID</button>
-      <br /><br />
     </div>
+    <footer>
+      Ngoc Dang &#64;2024, <a href="https://github.com/dngvbngc">Github</a>
+    </footer>
   </body>
 </html>

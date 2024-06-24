@@ -7,6 +7,7 @@ h1 {
   color: darkgreen;
   margin-bottom: -5px;
 }
+
 p {
   margin-bottom: -10px;
 }
@@ -37,29 +38,18 @@ p {
 }
 
 /* Reset Button */
-#resetbtn {
-  box-sizing: border-box;
-  height: 40px;
-  border: 1px solid green;
-  margin-left: auto;
-  border-radius: 8px;
-  color: green;
-  font-size: 20px;
-  cursor: pointer;
-  background-color: mintcream;
-}
-
+#resetbtn,
 #hidegridbtn,
 #showgridbtn {
   box-sizing: border-box;
   height: 40px;
-  border: 1px solid green;
+  border: none;
   margin-left: auto;
   border-radius: 8px;
   color: green;
   font-size: 20px;
   cursor: pointer;
-  background-color: mintcream;
+  background-color: lightcyan;
 }
 
 /* Main Container */
@@ -69,7 +59,7 @@ p {
 
 /* Game Instruction Text */
 #ins {
-  color: dodgerblue;
+  color: darkgreen;
 }
 
 .nogrid input {
@@ -82,11 +72,30 @@ p {
 .nogrid button {
   box-sizing: border-box;
   height: 30px;
-  border: 1px solid green;
+  border: none;
   margin-left: auto;
   border-radius: 8px;
   color: green;
   font-size: 15px;
   cursor: pointer;
   background-color: mintcream;
+}
+
+footer {
+  position: absolute;
+  left: 80%;
+  bottom: 10px;
+  text-align: center;
+}
+
+small {
+  color: darkgreen;
+}
+
+form {
+  background-color: lightgray;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  margin-left: 20%;
+  width: 60%;
 }

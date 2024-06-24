@@ -38,21 +38,24 @@ function markCell(cellIndex) {
   if (cellIndex == 0 || cellIndex > grid.length) {
     alert("Invalid row and/or column value for a cell.");
     return;
-  }
-  if (grid[cellIndex] != 0) {
+  } else if (grid[cellIndex] != 0) {
     alert("Cell has already been selected. Choose another.");
     return;
-  }
-  // Mark grid after each move
-  grid[cellIndex] = flag;
-  // Change flag
-  if (flag == 1) {
-    flag = 2;
   } else {
-    flag = 1;
+    // Mark grid after each move
+    grid[cellIndex] = flag;
+    // Change flag
+    if (flag == 1) {
+      flag = 2;
+    } else {
+      flag = 1;
+    }
+    // Disable cell
+    document.getElementById("b" + cellIndex).disabled = true;
+    // Clear input fields
+    document.querySelector("#row-index").value = "";
+    document.querySelector("#col-index").value = "";
   }
-  // Disable cell
-  document.getElementById("b" + cellIndex).disabled = true;
 }
 
 function isTied() {
@@ -95,7 +98,7 @@ function showWinner(flag) {
   // Show winner status
   var ins = document.getElementById("ins");
   ins.style.color = "red";
-  ins.innerHTML = "Player " + flag + " won";
+  ins.innerHTML = "Congratulations! Player " + flag + " has won!";
 
   // Disable unmarked cell & show marked cell
   for (let i = 1; i < grid.length; i++) {
