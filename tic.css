@@ -1,0 +1,92 @@
+body {
+  padding-top: 5%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1 {
+  color: darkgreen;
+  margin-bottom: -5px;
+}
+p {
+  margin-bottom: -10px;
+}
+.grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.row {
+  display: flex;
+}
+.cell {
+  border: 1px solid gray;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+.cell:active {
+  outline: none;
+}
+.cell:disabled {
+  background-color: lightblue;
+}
+
+/* Reset Button */
+#resetbtn {
+  box-sizing: border-box;
+  height: 40px;
+  border: 1px solid green;
+  margin-left: auto;
+  border-radius: 8px;
+  color: green;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: mintcream;
+}
+
+#hidegridbtn,
+#showgridbtn {
+  box-sizing: border-box;
+  height: 40px;
+  border: 1px solid green;
+  margin-left: auto;
+  border-radius: 8px;
+  color: green;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: mintcream;
+}
+
+/* Main Container */
+#main {
+  text-align: center;
+}
+
+/* Game Instruction Text */
+#ins {
+  color: dodgerblue;
+}
+
+.nogrid input {
+  height: 40px;
+  width: 60px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.nogrid button {
+  box-sizing: border-box;
+  height: 30px;
+  border: 1px solid green;
+  margin-left: auto;
+  border-radius: 8px;
+  color: green;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: mintcream;
+}
