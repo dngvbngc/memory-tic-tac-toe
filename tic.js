@@ -98,7 +98,8 @@ function showWinner(flag) {
   // Show winner status
   var ins = document.getElementById("ins");
   ins.style.color = "red";
-  ins.innerHTML = "Congratulations! Player " + flag + " has won!";
+  ins.innerHTML =
+    "Congratulations! Player " + flag + " has won! Click RESET to play again.";
 
   // Disable unmarked cell & show marked cell
   for (let i = 1; i < grid.length; i++) {

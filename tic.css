@@ -1,6 +1,13 @@
 body {
   padding-top: 5%;
   font-family: Georgia, "Times New Roman", Times, serif;
+  background-image: url("background.svg");
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
@@ -86,6 +93,10 @@ footer {
   left: 80%;
   bottom: 10px;
   text-align: center;
+  color: white;
+  a {
+    color: white;
+  }
 }
 
 small {
@@ -98,4 +109,8 @@ form {
   padding-bottom: 10vh;
   margin-left: 20%;
   width: 60%;
+}
+
+.container {
+  padding: 8vh;
 }
